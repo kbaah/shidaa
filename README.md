@@ -1,3 +1,1 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).# shidaa
-# shidaa
-# shidaa
+This is for Shidaa Immogration Consults
