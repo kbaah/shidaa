@@ -5,45 +5,48 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Shidaa Immigration Consults</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
+        <link rel="manifest" href="/site.webmanifest"/>
       </Head>
 
       <main>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Welcome to Shidaa Immigration Consults
         </h1>
 
         <p className={styles.description}>
-          Get started by editing <code>pages/index.js</code>
+          We are licensed by the IRCC to assist you in all your immigration needs.
         </p>
 
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
+            <h3>Study in Canada&rarr;</h3>
+            <p>Click <a href='https://docs.google.com/forms/d/e/1FAIpQLSeHKiha0IrOXSIzWijgb1T7HPwZ8BytpVuRK47KMVZyL4NfKQ/viewform?vc=0&c=0&w=1&flr=0'   target='_blank'>here </a> to submit your details and we will contact you.<a href=''> </a></p>
           </a>
 
           <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
+            <h3>Talk to our experienced consultant &rarr;</h3>
+            <p>Click here to book some time with our consultant</p>
           </a>
 
           <a
             href="https://github.com/vercel/next.js/tree/master/examples"
             className={styles.card}
           >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
+            <h3>Work in Canada &rarr;</h3>
+            <p>Find out more aboout the opportunities available to you</p>
           </a>
 
           <a
             href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
             className={styles.card}
           >
-            <h3>Deploy &rarr;</h3>
+            <h3>Frequently Asked Questions &rarr;</h3>
             <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
+              Find instant answers to the most common questions
             </p>
           </a>
         </div>
@@ -51,12 +54,11 @@ export default function Home() {
 
       <footer>
         <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          href="mailto:daniel@shidaaconsults.com"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel" className={styles.logo} />
+         Send us an email or contact us on +1 647 
         </a>
       </footer>
 
