@@ -1,117 +1,183 @@
 import Head from 'next/head';
-import styles from '../styles/Home.module.css';
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div className="container">
       <Head>
         <title>Shidaa Immigration Consults</title>
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
-        <link rel="manifest" href="/site.webmanifest"/>
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="manifest" href="/site.webmanifest" />
       </Head>
 
-      <main>
-        <h1 className={styles.title}>
+      <nav className="navbar">
+      <img src="/Shidaa Logo.jpeg" alt="Shidaa Immigration Consults Logo" width={50} height={50} />
+        <div className="logo">Shidaa Immigration Consults</div>
+        <ul className="nav-links">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Services</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <main className="main">
+        <h1 className="title">
           Welcome to Shidaa Immigration Consults
         </h1>
 
-        <p className={styles.description}>
+        <p className="description">
           We are licensed by the IRCC to assist you in all your immigration needs.
         </p>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Study in Canada&rarr;</h3>
-            <p>Click <a href='https://docs.google.com/forms/d/e/1FAIpQLSeHKiha0IrOXSIzWijgb1T7HPwZ8BytpVuRK47KMVZyL4NfKQ/viewform?vc=0&c=0&w=1&flr=0'   target='_blank'>here </a> to submit your details and we will contact you.<a href=''> </a></p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Talk to our experienced consultant &rarr;</h3>
-            <p>Click here to book some time with our consultant</p>
+        <div className="grid">
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeHKiha0IrOXSIzWijgb1T7HPwZ8BytpVuRK47KMVZyL4NfKQ/viewform?vc=0&c=0&w=1&flr=0"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="card"
+          >
+            <h3>Study in Canada</h3>
+            <p>Submit your details and we will contact you.</p>
           </a>
 
           <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeHKiha0IrOXSIzWijgb1T7HPwZ8BytpVuRK47KMVZyL4NfKQ/viewform?vc=0&c=0&w=1&flr=0"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="card"
           >
-            <h3>Work in Canada &rarr;</h3>
-            <p>Find out more aboout the opportunities available to you</p>
+            <h3>Talk to our experienced consultant</h3>
+            <p>Book some time with our consultant.</p>
           </a>
 
           <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeHKiha0IrOXSIzWijgb1T7HPwZ8BytpVuRK47KMVZyL4NfKQ/viewform?vc=0&c=0&w=1&flr=0"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="card"
           >
-            <h3>Frequently Asked Questions &rarr;</h3>
-            <p>
-              Find instant answers to the most common questions
-            </p>
+            <h3>Work in Canada</h3>
+            <p>Explore the opportunities available to you.</p>
+          </a>
+
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeHKiha0IrOXSIzWijgb1T7HPwZ8BytpVuRK47KMVZyL4NfKQ/viewform?vc=0&c=0&w=1&flr=0"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="card"
+          >
+            <h3>Frequently Asked Questions</h3>
+            <p>Find instant answers to common questions.</p>
           </a>
         </div>
       </main>
 
-      <footer>
-        <a
-          href="mailto:daniel@shidaaconsults.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-         Send us an email or contact us on +1 647 
+      <footer className="footer">
+        <a href="mailto:daniel@shidaaconsults.com" target="_blank" rel="noopener noreferrer">
+          Contact us: daniel@shidaaconsults.com | +1-647-568-5095
         </a>
       </footer>
 
       <style jsx>{`
-        main {
-          padding: 5rem 0;
-          flex: 1;
+        .container {
+          min-height: 100vh;
+       
+          color: #000000; /* Black text color */
+          font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 1rem;
+          background-color: #ffffff;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+          font-size: 1.5rem;
+          font-weight: bold;
+        }
+
+        .nav-links {
+          display: flex;
+          list-style-type: none;
+        }
+
+        .nav-links li {
+          margin-right: 1rem;
+        }
+
+        .nav-links a {
+          text-decoration: none;
+          color: #000000;
+        }
+
+        .main {
+          text-align: center;
+          padding: 2rem;
+        }
+
+        .title {
+          font-size: 2.5rem;
+          margin-bottom: 1.5rem;
+        }
+
+        .description {
+          font-size: 1.25rem;
+          margin-bottom: 2.5rem;
+        }
+
+        .grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+          grid-gap: 2rem;
+        }
+
+        .card {
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
-        }
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-        footer img {
-          margin-left: 0.5rem;
-        }
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
+          padding: 2rem;
+          border: 2px solid #ff0000; /* Red outline */
+          border-radius: 8px;
+          transition: transform 0.3s ease;
           text-decoration: none;
           color: inherit;
         }
-        code {
-          background: #fafafa;
-          border-radius: 5px;
-          padding: 0.75rem;
-          font-size: 1.1rem;
-          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-        }
-      `}</style>
 
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
+        .card:hover {
+          transform: translateY(-5px);
         }
-        * {
-          box-sizing: border-box;
+
+        .card h3 {
+          font-size: 1.5rem;
+          margin-bottom: 0.5rem;
+        }
+
+        .card p {
+          font-size: 1.1rem;
+        }
+
+        .footer {
+          margin-top: 4rem;
+          text-align: center;
+        }
+
+        .footer a {
+          text-decoration: none;
+          color: inherit;
         }
       `}</style>
     </div>
-  )
+  );
 }
