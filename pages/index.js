@@ -1,4 +1,6 @@
 import Head from 'next/head';
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 export default function Home() {
   return (
@@ -12,7 +14,7 @@ export default function Home() {
       </Head>
 
       <nav className="navbar">
-      <img src="/Shidaa Logo.jpeg" alt="Shidaa Immigration Consults Logo" width={50} height={50} />
+        <img src="/Shidaa Logo.jpeg" alt="Shidaa Immigration Consults Logo" width={50} height={50} />
         <div className="logo">Shidaa Immigration Consults</div>
         <ul className="nav-links">
           <li>
@@ -88,7 +90,6 @@ export default function Home() {
       <style jsx>{`
         .container {
           min-height: 100vh;
-       
           color: #000000; /* Black text color */
           font-family: Arial, sans-serif;
         }
@@ -138,8 +139,11 @@ export default function Home() {
 
         .grid {
           display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+          grid-template-columns: repeat(2, 1fr); /* Two columns */
           grid-gap: 2rem;
+          width: 50%;
+          justify-content: center;
+          padding: 0 35rem;
         }
 
         .card {
